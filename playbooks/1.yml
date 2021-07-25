@@ -1,0 +1,7 @@
+---
+  - name: "Playing with Ansible and copy"
+    hosts: localhost
+    tasks:
+    - copy: 
+        src: "README.md" 
+        dest: "READMEcopy.md"

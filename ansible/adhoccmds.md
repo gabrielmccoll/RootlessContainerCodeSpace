@@ -1,0 +1,1 @@
+ansible -m copy -a "src=README.md dest=ansible/READMEcopy.md" localhost
