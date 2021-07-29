@@ -1,0 +1,8 @@
+[cvms]
+c60bb3cdda1c.mylabserver.com
+4fd19bc4e91c.mylabserver.com
+31820dcad21c.mylabserver.com
+
+[cvms:vars]
+ansible_user=cloud_user
+ansible_port=22

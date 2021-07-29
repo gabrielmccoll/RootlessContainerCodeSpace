@@ -1,7 +1,16 @@
 ---
-  - name: "Playing with Ansible and copy"
-    hosts: localhost
+  # - name: "Playing with Ansible and copy"
+  #   hosts: localhost
+  #   tasks:
+  #   - name: Copy Readme
+  #     copy: 
+  #       mode: preserve
+  #       src: "README.md" 
+  #       dest: "READMEcopy.md"
+  - name: "making sure stuff installed"
+    hosts: cvms
+    become: yes
     tasks:
-    - copy: 
-        src: "README.md" 
-        dest: "READMEcopy.md"
+    - name: Install Python3
+      yum:
+        name: python3
